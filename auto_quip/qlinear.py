@@ -2,7 +2,7 @@
 import torch
 import torch.nn as nn
 
-from quant import (get_hadK, matmul_hadUt_cuda, matmul_hadU_cuda)
+from auto_quip.quant import (get_hadK, matmul_hadUt_cuda, matmul_hadU_cuda)
 
 
 class QuantLinear(nn.Module):

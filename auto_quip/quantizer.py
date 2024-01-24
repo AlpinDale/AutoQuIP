@@ -34,14 +34,14 @@ from accelerate.hooks import remove_hook_from_module
 from safetensors.torch import load_file
 from huggingface_hub import snapshot_download
 
-from constants import QUIP_CONFIG
-from data import get_dataset, prepare_dataset
-from utils import (get_block_name_with_pattern, get_device, get_layers,
-                   get_preceding_modules, get_seqlen, recurse_getattr,
-                   get_layers_for_scaling)
-from quip import QUIP
-from qlinear import QuantLinear
-from codebook import codebook_id
+from auto_quip.constants import QUIP_CONFIG
+from auto_quip.data import get_dataset, prepare_dataset
+from auto_quip.utils import (get_block_name_with_pattern, get_device, get_layers,
+                             get_preceding_modules, get_seqlen, recurse_getattr,
+                             get_layers_for_scaling)
+from auto_quip.quip import QUIP
+from auto_quip.qlinear import QuantLinear
+from auto_quip.codebook import codebook_id
 
 logger = getLogger(__name__)
 

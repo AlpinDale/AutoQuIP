@@ -20,7 +20,7 @@ import torch
 from torch import nn
 from transformers.pytorch_utils import Conv1D
 
-from constants import BLOCK_PATTERNS, SEQLEN_KEYS_TRANFORMERS
+from auto_quip.constants import BLOCK_PATTERNS, SEQLEN_KEYS_TRANFORMERS
 
 logger = getLogger(__name__)
 

@@ -7,7 +7,8 @@ import torch
 from torch import nn
 
 import quiptools_cuda
-from .e8p12 import get_full_grid, get_packed_abs_grid, _E8P_CODESZ
+from auto_quip.codebook.e8p12 import (
+    get_full_grid, get_packed_abs_grid, _E8P_CODESZ)
 
 
 class E8P12RVQ4B_codebook(nn.Module):

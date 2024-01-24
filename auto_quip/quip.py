@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 import transformers
 
-from quant import (
+from auto_quip.quant import (
     LDLQ,
     LDLQ_buffered,
     get_hadK,

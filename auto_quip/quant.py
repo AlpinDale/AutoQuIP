@@ -1,12 +1,13 @@
 # Modified from https://github.com/Cornell-RelaxML/quip-sharp/blob/main/lib/algo/quip.py
 import math
+from pathlib import Path
 
 import scipy
 import torch
 import fast_hadamard_transform
 from safetensors.torch import load_file
 
-had_tensors = load_file("hadamard.safetensors")
+had_tensors = load_file(Path(__file__).resolve().parent / "hadamard.safetensors")
 
 
 def next_power_of_2(n):
