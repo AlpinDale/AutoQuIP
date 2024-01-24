@@ -3,3 +3,4 @@ accelerate
 torch
 datasets
 fast-hadamard-transform
+click

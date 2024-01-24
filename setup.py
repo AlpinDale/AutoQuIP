@@ -214,6 +214,11 @@ setup(
     ext_modules=ext_modules,
     cmdclass={'build_ext': cpp_extension.BuildExtension},
     install_requires=get_requirements(),
+    entry_points={
+        'console_scripts': [
+            'auto_quip=auto_quip.cli:main',
+        ],
+    },
     package_data={'auto_quip': ['auto_quip/hadamard.safetensors']},
     include_package_data=True,
 )
