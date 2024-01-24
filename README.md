@@ -22,6 +22,10 @@ pip install -e .
 
 Please refer to the [author's blog](https://cornell-relaxml.github.io/quip-sharp/) for a thorough explanation of the QuIP# algorithm.
 
+After installation, you can use the CLI app `auto_quip` to quantize a model. Simply run 
+`auto_quip --help` for a list of options.
+
+If you wish to do this programmatically via the API, you can use the following example:
 
 ```python
 import torch
