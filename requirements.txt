@@ -4,3 +4,4 @@ torch
 datasets
 fast-hadamard-transform
 click
+scipy
